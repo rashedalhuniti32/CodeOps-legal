@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Masar Legal Solutions</title>
-    <!-- Google Fonts -->
+    <title>About Us | MASAR Legal Solutions</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        navy: { 900: '#0A1424', 800: '#0F1E36', 700: '#1A2A45' },
-                        sand: { 50: '#FDFBF7', 500: '#C5A880', 600: '#B0936C' },
+                        navy: { 900: '#0A1424', 800: '#111D32', 700: '#1A2A45' },
+                        sand: { 50: '#FAF8F5', 500: '#C5A880', 600: '#B0936C' },
                         slate: { 50: '#F8FAFC', 800: '#1E293B' }
                     },
                     fontFamily: {
@@ -28,41 +28,45 @@
         }
     </script>
     <style>
-        body.lang-ar { font-family: 'IBM Plex Sans Arabic', sans-serif; line-height: 1.75; }
-        .lang-ar h1, .lang-ar h2 { line-height: 1.5; }
+        [dir="rtl"] { font-family: 'IBM Plex Sans Arabic', sans-serif; text-align: right; }
+        [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { line-height: 1.45 !important; }
+        [dir="rtl"] .text-start { text-align: right; }
+        [dir="ltr"] .text-start { text-align: left; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-sand-500 selection:text-white">
 
-    <!-- Header (Shared) -->
     <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-navy-700/60">
         <div class="max-w-6xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-lg bg-sand-500 flex items-center justify-center font-bold text-navy-900 text-lg shadow-sm">M</div>
+                <div class="w-10 h-10 rounded-lg bg-sand-500 flex items-center justify-center font-bold text-navy-900 text-xl">M</div>
                 <div>
-                    <span class="text-white font-bold tracking-tight text-base sm:text-lg block leading-none pt-1">MASAR</span>
-                    <span class="text-[10px] text-sand-500 font-medium tracking-wide block uppercase mt-1" data-i18n="logo_sub">Legal Solutions</span>
+                    <span class="text-white font-bold tracking-tight text-base sm:text-lg block">MASAR</span>
+                    <span class="text-[10px] text-sand-500 font-semibold tracking-wider block uppercase">Legal Solutions</span>
                 </div>
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-sand-500 transition" data-i18n="nav_home">Home</a>
                 <a href="services.html" class="hover:text-sand-500 transition" data-i18n="nav_services">Services</a>
                 <a href="about.html" class="text-sand-500 transition" data-i18n="nav_about">About</a>
                 <a href="team.html" class="hover:text-sand-500 transition" data-i18n="nav_team">Team</a>
                 <a href="contact.html" class="hover:text-sand-500 transition" data-i18n="nav_contact">Contact</a>
             </nav>
             <div class="flex items-center gap-4">
-                <button id="langToggle" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-navy-700 text-slate-300 hover:text-white hover:border-sand-500 transition flex items-center gap-1.5">
+                <button id="langToggle" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-navy-700 text-slate-300 hover:text-white hover:border-sand-500 transition">
                     <span id="langLabel">العربية</span>
                 </button>
+                <a href="contact.html" class="hidden sm:inline-flex bg-sand-500 hover:bg-sand-600 text-navy-900 font-bold px-4 py-2 rounded-lg text-xs sm:text-sm shadow-sm" data-i18n="cta_header">Speak with Counsel</a>
             </div>
         </div>
     </header>
 
-    <!-- Page Content -->
     <section class="py-20 px-5 sm:px-8 max-w-4xl mx-auto">
-        <div class="mb-12">
+        <div class="mb-12 text-start">
             <span class="text-xs uppercase font-bold tracking-widest text-sand-500 mb-4 block" data-i18n="about_badge">The Legal Operations Model</span>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 mb-8" data-i18n="about_title">Bridging the Gap Between Local Courtrooms and International Standards.</h1>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 mb-8" data-i18n="about_title">
+                Bridging the Gap Between Local Courtrooms and International Standards.
+            </h1>
         </div>
 
         <div class="w-full h-64 sm:h-96 rounded-2xl overflow-hidden mb-12 relative shadow-lg">
@@ -70,80 +74,95 @@
             <div class="absolute inset-0 bg-navy-900/30 mix-blend-multiply"></div>
         </div>
 
-        <div class="prose prose-slate max-w-none text-slate-700 text-base sm:text-lg leading-relaxed space-y-6">
-            <p data-i18n="about_p1">Entering a new market or managing cross-border teams inherently comes with a structural disconnect. Foreign investors and tech firms require speed, digital transparency, and institutional governance. In contrast, local execution in Jordan—across ministries, registries, and courts—relies heavily on deeply ingrained bureaucratic processes and Arabic-centric legal nuances.</p>
-            <p data-i18n="about_p2"><strong>Masar Legal Solutions (MLS)</strong> was founded to permanently eliminate this friction. We are not a traditional law firm constrained by legacy operational models, nor are we remote consultants detached from the reality of the local system. We are an integrated execution desk.</p>
+        <div class="prose prose-slate max-w-none text-slate-700 text-base sm:text-lg leading-relaxed space-y-6 text-start">
+            <p data-i18n="about_p1">
+                Entering a new market or managing cross-border teams inherently comes with a structural disconnect. Foreign investors and tech firms require speed, digital transparency, and institutional governance. In contrast, local execution in Jordan relies heavily on deeply ingrained bureaucratic processes and Arabic-centric legal nuances.
+            </p>
+            <p data-i18n="about_p2">
+                MASAR Legal Solutions was founded to eliminate this friction. We are not a traditional law firm constrained by legacy operational models, nor are we remote consultants detached from the reality of the local system. We are an integrated execution desk.
+            </p>
             
             <div class="bg-navy-900 text-white p-8 rounded-2xl my-10 shadow-lg border border-navy-800">
                 <h3 class="text-xl font-bold text-sand-500 mb-4" data-i18n="about_box_title">Our Distinct Advantage</h3>
-                <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="about_box_desc">By merging the rigorous compliance standards and bilingual operational models honed in International NGOs (INGOs) with the direct courtroom authority of Jordan Bar-admitted advocates, MLS ensures that your legal strategy is not only internationally viable, but flawlessly executed on the ground in Amman.</p>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="about_box_desc">
+                    By merging the rigorous compliance standards honed in International NGOs (INGOs) with the direct courtroom authority of Jordan Bar-admitted advocates, MASAR ensures your legal strategy is not only internationally viable, but executed on the ground in Amman.
+                </p>
             </div>
 
             <h3 class="text-2xl font-bold text-navy-900 mt-12 mb-4" data-i18n="about_h3">We Don't Just Advise; We Execute.</h3>
-            <p data-i18n="about_p3">Our approach is systematic: clear fixed-fee structures, immediate turnaround times, and direct partner access. Whether we are auditing your data privacy frameworks under PDPL Law 24/2023 or standing before a judge in a commercial dispute, Masar acts as the impenetrable legal shield for your operations in Jordan.</p>
+            <p data-i18n="about_p3">
+                Our approach is systematic: clear fixed-fee structures, immediate turnaround times, and direct partner access. Whether we are auditing your data privacy frameworks under PDPL Law 24/2023 or standing before a judge in a commercial dispute, MASAR acts as your impenetrable legal shield.
+            </p>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-navy-900 text-slate-400 py-10 px-5 sm:px-8 border-t border-navy-800 text-xs">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="text-center md:text-left rtl:md:text-right">
-                <span class="text-white font-semibold">Masar Legal Solutions</span>
+            <div class="text-center text-start">
+                <span class="text-white font-semibold">MASAR Legal Solutions</span>
                 <span class="mx-2 text-navy-700">|</span>
                 <span data-i18n="footer_loc">Amman, Jordan</span>
             </div>
             <div class="flex items-center gap-6">
-                <span data-i18n="footer_rights">© 2026 Masar Legal Solutions. All rights reserved.</span>
+                <a href="contact.html" class="hover:text-sand-500 transition" data-i18n="nav_contact">Contact Us</a>
+                <span data-i18n="footer_rights">© 2026 MASAR Legal Solutions. All rights reserved.</span>
             </div>
         </div>
     </footer>
 
-    <!-- Bilingual Engine -->
     <script>
         const i18n = {
             en: {
-                logo_sub: "Legal Solutions", nav_services: "Services", nav_about: "About", nav_team: "Team", nav_contact: "Contact",
-                about_badge: "The Legal Operations Model", about_title: "Bridging the Gap Between Local Courtrooms and International Standards.",
-                about_p1: "Entering a new market or managing cross-border teams inherently comes with a structural disconnect. Foreign investors and tech firms require speed, digital transparency, and institutional governance. In contrast, local execution in Jordan—across ministries, registries, and courts—relies heavily on deeply ingrained bureaucratic processes and Arabic-centric legal nuances.",
-                about_p2: "<strong>Masar Legal Solutions (MLS)</strong> was founded to permanently eliminate this friction. We are not a traditional law firm constrained by legacy operational models, nor are we remote consultants detached from the reality of the local system. We are an integrated execution desk.",
-                about_box_title: "Our Distinct Advantage", about_box_desc: "By merging the rigorous compliance standards and bilingual operational models honed in International NGOs (INGOs) with the direct courtroom authority of Jordan Bar-admitted advocates, MLS ensures that your legal strategy is not only internationally viable, but flawlessly executed on the ground in Amman.",
-                about_h3: "We Don't Just Advise; We Execute.", about_p3: "Our approach is systematic: clear fixed-fee structures, immediate turnaround times, and direct partner access. Whether we are auditing your data privacy frameworks under PDPL Law 24/2023 or standing before a judge in a commercial dispute, Masar acts as the impenetrable legal shield for your operations in Jordan.",
-                footer_loc: "Amman, Jordan", footer_rights: "© 2026 Masar Legal Solutions. All rights reserved."
+                nav_home: "Home", nav_services: "Services", nav_about: "About", nav_team: "Team", nav_contact: "Contact", cta_header: "Speak with Counsel",
+                about_badge: "The Legal Operations Model",
+                about_title: "Bridging the Gap Between Local Courtrooms and International Standards.",
+                about_p1: "Entering a new market or managing cross-border teams inherently comes with a structural disconnect. Foreign investors and tech firms require speed, digital transparency, and institutional governance. In contrast, local execution in Jordan relies heavily on deeply ingrained bureaucratic processes and Arabic-centric legal nuances.",
+                about_p2: "MASAR Legal Solutions was founded to eliminate this friction. We are not a traditional law firm constrained by legacy operational models, nor are we remote consultants detached from the reality of the local system. We are an integrated execution desk.",
+                about_box_title: "Our Distinct Advantage",
+                about_box_desc: "By merging the rigorous compliance standards honed in International NGOs (INGOs) with the direct courtroom authority of Jordan Bar-admitted advocates, MASAR ensures your legal strategy is not only internationally viable, but executed on the ground in Amman.",
+                about_h3: "We Don't Just Advise; We Execute.",
+                about_p3: "Our approach is systematic: clear fixed-fee structures, immediate turnaround times, and direct partner access. Whether we are auditing your data privacy frameworks under PDPL Law 24/2023 or standing before a judge in a commercial dispute, MASAR acts as your impenetrable legal shield.",
+                footer_loc: "Amman, Jordan", footer_rights: "© 2026 MASAR Legal Solutions. All rights reserved."
             },
             ar: {
-                logo_sub: "Legal Solutions", nav_services: "مجالات الاختصاص", nav_about: "عن مسار", nav_team: "فريق العمل", nav_contact: "تواصل معنا",
-                about_badge: "نموذج العمليات القانونية", about_title: "الجسر الرابط بين الواقع الميداني المحلي والمعايير المؤسسية الدولية.",
-                about_p1: "دخول أسواق جديدة أو إدارة فرق عمل عابرة للحدود يأتي غالباً مع فجوة هيكلية. المستثمر الأجنبي وشركات التقنية يتطلبون السرعة، الشفافية الرقمية، والحوكمة المؤسسية. في المقابل، التنفيذ المحلي في الأردن - عبر الوزارات والمحاكم - يعتمد على إجراءات بيروقراطية عميقة وتفاصيل قانونية دقيقة باللغة العربية.",
-                about_p2: "تأسست <strong>مسار (MLS)</strong> لإنهاء هذا التعقيد بشكل دائم. نحن لسنا مكتب محاماة تقليدي مقيد بأنظمة عمل قديمة، ولسنا مجرد مستشارين عن بُعد منفصلين عن واقع النظام المحلي؛ نحن ذراع تنفيذي متكامل.",
-                about_box_title: "ميزتنا التنافسية", about_box_desc: "من خلال دمج معايير الامتثال الصارمة ونماذج العمليات ثنائية اللغة المكتسبة من المنظمات الدولية (INGOs)، مع السلطة الميدانية والقضائية المباشرة لمحامين مزاولين ومعتمدين لدى نقابة المحامين الأردنيين، تضمن (مسار) أن استراتيجيتك القانونية ليست فقط متوافقة دولياً، بل منفذة ببراعة وحسم على أرض الواقع في عمان.",
-                about_h3: "نحن لا نُنَظِّر؛ بل نُنفّذ.", about_p3: "منهجيتنا صارمة وواضحة: هياكل أتعاب مقطوعة وشفافة، سرعة في الإنجاز، وتواصل مباشر مع الشركاء. سواء كنا ندقق سياسات حماية البيانات (PDPL رقم 24/2023) الخاصة بك، أو نترافع أمام القضاء في نزاع تجاري، تعمل (مسار) كدرع قانوني صلب لعملياتك في الأردن.",
-                footer_loc: "عَمّان، الأردن", footer_rights: "© 2026 Masar Legal Solutions. All rights reserved."
+                nav_home: "الرئيسية", nav_services: "الاختصاصات", nav_about: "عن مسار", nav_team: "فريق العمل", nav_contact: "تواصل معنا", cta_header: "تحدث مع محامٍ",
+                about_badge: "نموذج العمليات القانونية",
+                about_title: "الجسر الرابط بين الواقع الميداني المحلي والمعايير الدولية.",
+                about_p1: "دخول أسواق جديدة أو إدارة فرق عمل عابرة للحدود يأتي غالباً مع فجوة هيكلية. المستثمر الأجنبي يتطلب السرعة والشفافية الرقمية والحوكمة، بينما التنفيذ المحلي يعتمد على إجراءات بيروقراطية وتفاصيل نظامية دقيقة باللغة العربية.",
+                about_p2: "تأسست مسار للحلول القانونية (MASAR) لإنهاء هذا التعقيد بشكل دائم. نحن لسنا مكتب محاماة تقليدي مقيد بأنظمة عمل بطيئة، ولسنا مجرد مستشارين عن بُعد منفصلين عن الواقع؛ بل ذراع تنفيذي متكامل.",
+                about_box_title: "ميزتنا المؤسسية",
+                about_box_desc: "من خلال دمج معايير الامتثال الصارمة المكتسبة من المنظمات الدولية (INGOs)، مع السلطة القضائية المباشرة لمحامين مزاولين معتمدين لدى نقابة المحامين، نضمن أن استراتيجيتك القانونية ليست فقط متوافقة دولياً، بل منفذة بحزم على أرض الواقع في عمان.",
+                about_h3: "نحن لا نُنَظِّر؛ بل نُنفّذ.",
+                about_p3: "منهجيتنا صارمة وواضحة: هياكل أتعاب مقطوعة ومحددة، سرعة في الإنجاز، وتواصل مباشر مع الشركاء. سواء كنا ندقق سياسات حماية البيانات (PDPL رقم 24/2023) أو نترافع في نزاع تجاري، نعمل كدرع صلب لعملياتك في الأردن.",
+                footer_loc: "عَمّان، الأردن", footer_rights: "© 2026 MASAR للحلول القانونية. جميع الحقوق محفوظة."
             }
         };
 
-        let currentLang = 'en';
         const langToggleBtn = document.getElementById('langToggle');
         const langLabel = document.getElementById('langLabel');
 
         function setLanguage(lang) {
-            currentLang = lang;
+            localStorage.setItem('masar_lang', lang);
             document.documentElement.lang = lang;
             document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-            if (lang === 'ar') {
-                document.body.classList.add('lang-ar');
-                langLabel.textContent = 'English';
-            } else {
-                document.body.classList.remove('lang-ar');
-                langLabel.textContent = 'العربية';
-            }
+            langLabel.textContent = (lang === 'ar') ? 'English' : 'العربية';
+
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
-                if (i18n[lang] && i18n[lang][key]) { el.innerHTML = i18n[lang][key]; }
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.textContent = i18n[lang][key];
+                }
             });
         }
 
         langToggleBtn.addEventListener('click', () => {
-            setLanguage(currentLang === 'en' ? 'ar' : 'en');
+            const current = localStorage.getItem('masar_lang') || 'en';
+            setLanguage(current === 'en' ? 'ar' : 'en');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('masar_lang') || 'en';
+            setLanguage(savedLang);
         });
     </script>
 </body>
