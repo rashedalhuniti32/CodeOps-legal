@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leadership Team | Masar Legal Solutions</title>
-    <!-- Google Fonts -->
+    <title>Leadership Team | MASAR Legal Solutions</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Tailwind CSS -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        navy: { 900: '#0A1424', 800: '#0F1E36', 700: '#1A2A45' },
-                        sand: { 50: '#FDFBF7', 500: '#C5A880', 600: '#B0936C' },
+                        navy: { 900: '#0A1424', 800: '#111D32', 700: '#1A2A45' },
+                        sand: { 50: '#FAF8F5', 500: '#C5A880', 600: '#B0936C' },
                         slate: { 50: '#F8FAFC', 800: '#1E293B' }
                     },
                     fontFamily: {
@@ -28,37 +28,39 @@
         }
     </script>
     <style>
-        body.lang-ar { font-family: 'IBM Plex Sans Arabic', sans-serif; line-height: 1.75; }
-        .lang-ar h1, .lang-ar h2, .lang-ar h3 { line-height: 1.5; }
+        [dir="rtl"] { font-family: 'IBM Plex Sans Arabic', sans-serif; text-align: right; }
+        [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { line-height: 1.45 !important; }
+        [dir="rtl"] .text-start { text-align: right; }
+        [dir="ltr"] .text-start { text-align: left; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-sand-500 selection:text-white">
 
-    <!-- Header (Shared) -->
     <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-navy-700/60">
         <div class="max-w-6xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
             <a href="index.html" class="flex items-center gap-3">
-                <div class="w-9 h-9 rounded-lg bg-sand-500 flex items-center justify-center font-bold text-navy-900 text-lg shadow-sm">M</div>
+                <div class="w-10 h-10 rounded-lg bg-sand-500 flex items-center justify-center font-bold text-navy-900 text-xl">M</div>
                 <div>
-                    <span class="text-white font-bold tracking-tight text-base sm:text-lg block leading-none pt-1">MASAR</span>
-                    <span class="text-[10px] text-sand-500 font-medium tracking-wide block uppercase mt-1" data-i18n="logo_sub">Legal Solutions</span>
+                    <span class="text-white font-bold tracking-tight text-base sm:text-lg block">MASAR</span>
+                    <span class="text-[10px] text-sand-500 font-semibold tracking-wider block uppercase">Legal Solutions</span>
                 </div>
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-sand-500 transition" data-i18n="nav_home">Home</a>
                 <a href="services.html" class="hover:text-sand-500 transition" data-i18n="nav_services">Services</a>
                 <a href="about.html" class="hover:text-sand-500 transition" data-i18n="nav_about">About</a>
                 <a href="team.html" class="text-sand-500 transition" data-i18n="nav_team">Team</a>
                 <a href="contact.html" class="hover:text-sand-500 transition" data-i18n="nav_contact">Contact</a>
             </nav>
             <div class="flex items-center gap-4">
-                <button id="langToggle" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-navy-700 text-slate-300 hover:text-white hover:border-sand-500 transition flex items-center gap-1.5">
+                <button id="langToggle" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-navy-700 text-slate-300 hover:text-white hover:border-sand-500 transition">
                     <span id="langLabel">العربية</span>
                 </button>
+                <a href="contact.html" class="hidden sm:inline-flex bg-sand-500 hover:bg-sand-600 text-navy-900 font-bold px-4 py-2 rounded-lg text-xs sm:text-sm shadow-sm" data-i18n="cta_header">Speak with Counsel</a>
             </div>
         </div>
     </header>
 
-    <!-- Page Content -->
     <section class="py-20 px-5 sm:px-8 max-w-5xl mx-auto">
         <div class="text-center max-w-2xl mx-auto mb-16">
             <span class="text-xs uppercase font-bold tracking-widest text-sand-500 mb-4 block" data-i18n="team_badge">Our People</span>
@@ -68,7 +70,7 @@
 
         <div class="grid md:grid-cols-2 gap-10">
             <!-- Lead 1: Advocate -->
-            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm text-start">
                 <div class="h-48 bg-navy-900 relative">
                     <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" alt="Legal Books">
                     <div class="absolute bottom-4 left-6 rtl:left-auto rtl:right-6">
@@ -82,17 +84,17 @@
                         <span data-i18n="cred_advocate">Licensed Advocate, Jordan Bar Association</span>
                     </p>
                     <p class="text-slate-700 text-sm leading-relaxed mb-6" data-i18n="desc_advocate">
-                        Leads the commercial litigation and corporate structuring desk. With extensive courtroom experience, she manages entity formations at the Ministry of Industry and Trade, labor dispute resolutions, and direct representation before the Specialized Commercial Courts in Amman.
+                        Leads the commercial litigation and corporate structuring desk. Manages entity formations at the Ministry of Industry and Trade, labor dispute resolutions, and courtroom representation before the Specialized Commercial Courts in Amman.
                     </p>
-                    <div class="border-t border-slate-100 pt-4 flex gap-4 text-xs font-mono text-slate-500">
-                        <div class="flex flex-col"><span class="text-sand-600 mb-1">Focus</span><span data-i18n="focus_1">Litigation & Setup</span></div>
-                        <div class="flex flex-col"><span class="text-sand-600 mb-1">Language</span><span data-i18n="lang_1">AR / EN</span></div>
+                    <div class="border-t border-slate-100 pt-4 flex gap-6 text-xs font-mono text-slate-500">
+                        <div><span class="text-sand-600 font-bold block mb-0.5">Focus</span><span data-i18n="focus_1">Litigation & Setup</span></div>
+                        <div><span class="text-sand-600 font-bold block mb-0.5">Language</span><span>AR / EN</span></div>
                     </div>
                 </div>
             </div>
 
             <!-- Lead 2: Operations -->
-            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition">
+            <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm text-start">
                 <div class="h-48 bg-navy-900 relative">
                     <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" alt="Modern Office">
                     <div class="absolute bottom-4 left-6 rtl:left-auto rtl:right-6">
@@ -106,81 +108,82 @@
                         <span data-i18n="cred_ops">Head of Legal Operations & Governance</span>
                     </p>
                     <p class="text-slate-700 text-sm leading-relaxed mb-6" data-i18n="desc_ops">
-                        Brings rigorous institutional frameworks from international NGO networks (ICRC / UNICEF) to the private sector. Specializes in engineering cross-border compliance workflows, remote employment models, and local data privacy (PDPL Law 24/2023) architectures for foreign entities.
+                        Brings institutional frameworks from international NGO networks (ICRC / UNICEF network) to the corporate sector. Specializes in engineering cross-border compliance workflows, remote workforce contracts, and PDPL data privacy advisory.
                     </p>
-                    <div class="border-t border-slate-100 pt-4 flex gap-4 text-xs font-mono text-slate-500">
-                        <div class="flex flex-col"><span class="text-sand-600 mb-1">Focus</span><span data-i18n="focus_2">Ops & PDPL</span></div>
-                        <div class="flex flex-col"><span class="text-sand-600 mb-1">Language</span><span data-i18n="lang_2">EN / AR</span></div>
+                    <div class="border-t border-slate-100 pt-4 flex gap-6 text-xs font-mono text-slate-500">
+                        <div><span class="text-sand-600 font-bold block mb-0.5">Focus</span><span data-i18n="focus_2">Ops & Privacy (PDPL)</span></div>
+                        <div><span class="text-sand-600 font-bold block mb-0.5">Language</span><span>EN / AR</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-navy-900 text-slate-400 py-10 px-5 sm:px-8 border-t border-navy-800 text-xs">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="text-center md:text-left rtl:md:text-right">
-                <span class="text-white font-semibold">Masar Legal Solutions</span>
+            <div class="text-center text-start">
+                <span class="text-white font-semibold">MASAR Legal Solutions</span>
                 <span class="mx-2 text-navy-700">|</span>
                 <span data-i18n="footer_loc">Amman, Jordan</span>
             </div>
             <div class="flex items-center gap-6">
-                <span data-i18n="footer_rights">© 2026 Masar Legal Solutions. All rights reserved.</span>
+                <a href="contact.html" class="hover:text-sand-500 transition" data-i18n="nav_contact">Contact Us</a>
+                <span data-i18n="footer_rights">© 2026 MASAR Legal Solutions. All rights reserved.</span>
             </div>
         </div>
     </footer>
 
-    <!-- Bilingual Engine -->
     <script>
         const i18n = {
             en: {
-                logo_sub: "Legal Solutions", nav_services: "Services", nav_about: "About", nav_team: "Team", nav_contact: "Contact",
+                nav_home: "Home", nav_services: "Services", nav_about: "About", nav_team: "Team", nav_contact: "Contact", cta_header: "Speak with Counsel",
                 team_badge: "Our People", team_title: "Practice Leadership", team_desc: "A synergy of localized courtroom authority and international operations governance.",
                 role_advocate: "Partner & Senior Counsel", name_advocate: "[Advocate Name]", cred_advocate: "Licensed Advocate, Jordan Bar Association",
-                desc_advocate: "Leads the commercial litigation and corporate structuring desk. With extensive courtroom experience, she manages entity formations at the Ministry of Industry and Trade, labor dispute resolutions, and direct representation before the Specialized Commercial Courts in Amman.",
-                focus_1: "Litigation & Setup", lang_1: "AR / EN",
+                desc_advocate: "Leads the commercial litigation and corporate structuring desk. Manages entity formations at the Ministry of Industry and Trade, labor dispute resolutions, and courtroom representation before the Specialized Commercial Courts in Amman.",
+                focus_1: "Litigation & Setup",
                 role_ops: "Managing Consultant", name_ops: "[Your Name]", cred_ops: "Head of Legal Operations & Governance",
-                desc_ops: "Brings rigorous institutional frameworks from international NGO networks (ICRC / UNICEF) to the private sector. Specializes in engineering cross-border compliance workflows, remote employment models, and local data privacy (PDPL Law 24/2023) architectures for foreign entities.",
-                focus_2: "Ops & PDPL", lang_2: "EN / AR",
-                footer_loc: "Amman, Jordan", footer_rights: "© 2026 Masar Legal Solutions. All rights reserved."
+                desc_ops: "Brings institutional frameworks from international NGO networks (ICRC / UNICEF network) to the corporate sector. Specializes in engineering cross-border compliance workflows, remote workforce contracts, and PDPL data privacy advisory.",
+                focus_2: "Ops & Privacy (PDPL)",
+                footer_loc: "Amman, Jordan", footer_rights: "© 2026 MASAR Legal Solutions. All rights reserved."
             },
             ar: {
-                logo_sub: "Legal Solutions", nav_services: "مجالات الاختصاص", nav_about: "عن مسار", nav_team: "فريق العمل", nav_contact: "تواصل معنا",
+                nav_home: "الرئيسية", nav_services: "الاختصاصات", nav_about: "عن مسار", nav_team: "فريق العمل", nav_contact: "تواصل معنا", cta_header: "تحدث مع محامٍ",
                 team_badge: "فريقنا", team_title: "القيادة المهنية", team_desc: "تناغم بين السلطة الميدانية في المحاكم وحوكمة العمليات المؤسسية الدولية.",
                 role_advocate: "محامية شريكة ومستشار رئيسي", name_advocate: "[اسم المحامية]", cred_advocate: "أستاذ مزاول، نقابة المحامين الأردنيين",
-                desc_advocate: "تقود مكتب التقاضي التجاري والهيكلة المؤسسية. بخبرة ميدانية واسعة، تدير تأسيس الكيانات لدى وزارة الصناعة والتجارة، تسوية النزاعات العمالية، والتمثيل المباشر أمام الغرف التجارية المتخصصة في عمان.",
-                focus_1: "التقاضي والتأسيس", lang_1: "عربي / إنجليزي",
+                desc_advocate: "تقود مكتب التقاضي التجاري والهيكلة المؤسسية. تدير تأسيس الكيانات لدى وزارة الصناعة والتجارة، تسوية النزاعات العمالية، والتمثيل المباشر أمام الغرف التجارية المتخصصة في عمان.",
+                focus_1: "التقاضي والتأسيس",
                 role_ops: "مستشار تنفيذي", name_ops: "[اسمك]", cred_ops: "مسؤول العمليات القانونية والحوكمة",
-                desc_ops: "ينقل المعايير المؤسسية الصارمة لشبكات المنظمات الدولية (ICRC / UNICEF) إلى القطاع الخاص. متخصص في هندسة أطر الامتثال العابرة للحدود، نماذج التوظيف عن بُعد، وبناء هياكل حماية البيانات (PDPL رقم 24/2023) للكيانات الأجنبية.",
-                focus_2: "العمليات وحماية البيانات", lang_2: "إنجليزي / عربي",
-                footer_loc: "عَمّان، الأردن", footer_rights: "© 2026 Masar Legal Solutions. All rights reserved."
+                desc_ops: "ينقل المعايير المؤسسية الصارمة لشبكات المنظمات الدولية إلى القطاع الخاص. متخصص في هندسة أطر الامتثال العابرة للحدود، نماذج عقود التوظيف عن بُعد، واستشارات حماية البيانات (PDPL رقم 24/2023).",
+                focus_2: "العمليات وحماية البيانات",
+                footer_loc: "عَمّان، الأردن", footer_rights: "© 2026 MASAR للحلول القانونية. جميع الحقوق محفوظة."
             }
         };
 
-        let currentLang = 'en';
         const langToggleBtn = document.getElementById('langToggle');
         const langLabel = document.getElementById('langLabel');
 
         function setLanguage(lang) {
-            currentLang = lang;
+            localStorage.setItem('masar_lang', lang);
             document.documentElement.lang = lang;
             document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-            if (lang === 'ar') {
-                document.body.classList.add('lang-ar');
-                langLabel.textContent = 'English';
-            } else {
-                document.body.classList.remove('lang-ar');
-                langLabel.textContent = 'العربية';
-            }
+            langLabel.textContent = (lang === 'ar') ? 'English' : 'العربية';
+
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
-                if (i18n[lang] && i18n[lang][key]) { el.innerHTML = i18n[lang][key]; }
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.textContent = i18n[lang][key];
+                }
             });
         }
 
         langToggleBtn.addEventListener('click', () => {
-            setLanguage(currentLang === 'en' ? 'ar' : 'en');
+            const current = localStorage.getItem('masar_lang') || 'en';
+            setLanguage(current === 'en' ? 'ar' : 'en');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('masar_lang') || 'en';
+            setLanguage(savedLang);
         });
     </script>
 </body>
