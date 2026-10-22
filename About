@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Areas | Masar Legal Solutions</title>
-    <meta name="description" content="Corporate setup, remote employment, PDPL compliance, and litigation in Jordan.">
+    <title>About Us | Masar Legal Solutions</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,21 +17,9 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: {
-                            900: '#0A1424',
-                            800: '#111D32',
-                            700: '#1A2A45',
-                        },
-                        sand: {
-                            50: '#FAF8F5',
-                            100: '#F2EBE1',
-                            500: '#C5A880',
-                            600: '#B0936C',
-                        },
-                        slate: {
-                            50: '#F8FAFC',
-                            800: '#1E293B',
-                        }
+                        navy: { 900: '#0A1424', 800: '#111D32', 700: '#1A2A45' },
+                        sand: { 50: '#FAF8F5', 500: '#C5A880', 600: '#B0936C' },
+                        slate: { 50: '#F8FAFC', 800: '#1E293B' }
                     },
                     fontFamily: {
                         sans: ['"Plus Jakarta Sans"', 'sans-serif'],
@@ -43,14 +30,8 @@
         }
     </script>
     <style>
-        /* التنسيق الخاص باللغة العربية لضمان المقروئية */
-        body.lang-ar { 
-            font-family: 'IBM Plex Sans Arabic', sans-serif; 
-            line-height: 1.75; 
-        }
-        .lang-ar h1, .lang-ar h2, .lang-ar h3 {
-            line-height: 1.5;
-        }
+        body.lang-ar { font-family: 'IBM Plex Sans Arabic', sans-serif; line-height: 1.75; }
+        .lang-ar h1, .lang-ar h2 { line-height: 1.5; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-sand-500 selection:text-white">
@@ -58,7 +39,6 @@
     <!-- Header (Shared) -->
     <header class="sticky top-0 z-50 bg-navy-900/95 backdrop-blur-md border-b border-navy-700/60">
         <div class="max-w-6xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
             <a href="index.html" class="flex items-center gap-3">
                 <div class="w-9 h-9 rounded-lg bg-sand-500 flex items-center justify-center font-bold text-navy-900 text-lg shadow-sm">M</div>
                 <div>
@@ -66,134 +46,57 @@
                     <span class="text-[10px] text-sand-500 font-medium tracking-wide block uppercase mt-1" data-i18n="logo_sub">Legal Solutions</span>
                 </div>
             </a>
-            <!-- Desktop Nav -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
                 <a href="index.html" class="hover:text-sand-500 transition" data-i18n="nav_home">Home</a>
-                <a href="services.html" class="text-sand-500 transition" data-i18n="nav_services">Services</a>
-                <a href="about.html" class="hover:text-sand-500 transition" data-i18n="nav_about">About</a>
+                <a href="services.html" class="hover:text-sand-500 transition" data-i18n="nav_services">Services</a>
+                <a href="about.html" class="text-sand-500 transition" data-i18n="nav_about">About</a>
                 <a href="team.html" class="hover:text-sand-500 transition" data-i18n="nav_team">Team</a>
             </nav>
-            <!-- Actions -->
             <div class="flex items-center gap-4">
                 <button id="langToggle" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-navy-700 text-slate-300 hover:text-white hover:border-sand-500 transition flex items-center gap-1.5">
                     <span id="langLabel">العربية</span>
                 </button>
-                <a href="contact.html" class="hidden sm:inline-flex bg-sand-500 hover:bg-sand-600 text-navy-900 font-semibold px-5 py-2 rounded-lg text-xs sm:text-sm transition duration-150 shadow-sm" data-i18n="cta_header">
-                    Speak with Counsel
-                </a>
+                <a href="contact.html" class="hidden sm:inline-flex bg-sand-500 hover:bg-sand-600 text-navy-900 font-semibold px-5 py-2 rounded-lg text-xs sm:text-sm transition duration-150 shadow-sm" data-i18n="cta_header">Speak with Counsel</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section with Architectural Image -->
-    <section class="relative bg-navy-900 py-24 px-5 sm:px-8 overflow-hidden">
-        <!-- Abstract Image Background from Unsplash with Dark Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop" alt="Corporate Architecture" class="w-full h-full object-cover opacity-10 mix-blend-luminosity">
-            <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/80 to-transparent"></div>
-        </div>
+    <!-- Page Content -->
+    <section class="py-20 px-5 sm:px-8 max-w-4xl mx-auto">
         
-        <div class="relative z-10 max-w-4xl mx-auto text-center">
-            <span class="text-xs uppercase font-bold tracking-widest text-sand-500 mb-4 block" data-i18n="hero_badge">Core Capabilities</span>
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6" data-i18n="hero_title">
-                Integrated Corporate Practice Pillars
+        <div class="mb-12">
+            <span class="text-xs uppercase font-bold tracking-widest text-sand-500 mb-4 block" data-i18n="about_badge">The Legal Operations Model</span>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-900 mb-8" data-i18n="about_title">
+                Bridging the Gap Between Local Courtrooms and International Standards.
             </h1>
-            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto" data-i18n="hero_desc">
-                Delivering end-to-end legal operations for foreign entities in Jordan. From market entry to continuous regulatory compliance and dispute resolution.
+        </div>
+
+        <!-- The Image Hook -->
+        <div class="w-full h-64 sm:h-96 rounded-2xl overflow-hidden mb-12 relative shadow-lg">
+            <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover filter grayscale contrast-125" alt="Office Reality">
+            <div class="absolute inset-0 bg-navy-900/30 mix-blend-multiply"></div>
+        </div>
+
+        <div class="prose prose-slate max-w-none text-slate-700 text-base sm:text-lg leading-relaxed space-y-6">
+            <p data-i18n="about_p1">
+                Entering a new market or managing cross-border teams inherently comes with a structural disconnect. Foreign investors and tech firms require speed, digital transparency, and institutional governance. In contrast, local execution in Jordan—across ministries, registries, and courts—relies heavily on deeply ingrained bureaucratic processes and Arabic-centric legal nuances.
+            </p>
+            <p data-i18n="about_p2">
+                <strong>Masar Legal Solutions (MLS)</strong> was founded to permanently eliminate this friction. We are not a traditional law firm constrained by legacy operational models, nor are we remote consultants detached from the reality of the local system. We are an integrated execution desk.
+            </p>
+            
+            <div class="bg-navy-900 text-white p-8 rounded-2xl my-10 shadow-lg border border-navy-800">
+                <h3 class="text-xl font-bold text-sand-500 mb-4" data-i18n="about_box_title">Our Distinct Advantage</h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed" data-i18n="about_box_desc">
+                    By merging the rigorous compliance standards and bilingual operational models honed in International NGOs (INGOs) with the direct courtroom authority of Jordan Bar-admitted advocates, MLS ensures that your legal strategy is not only internationally viable, but flawlessly executed on the ground in Amman.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-bold text-navy-900 mt-12 mb-4" data-i18n="about_h3">We Don't Just Advise; We Execute.</h3>
+            <p data-i18n="about_p3">
+                Our approach is systematic: clear fixed-fee structures, immediate turnaround times, and direct partner access. Whether we are auditing your data privacy frameworks under PDPL Law 24/2023 or standing before a judge in a commercial dispute, Masar acts as the impenetrable legal shield for your operations in Jordan.
             </p>
         </div>
-    </section>
-
-    <!-- Services Detailed Content -->
-    <section class="py-20 px-5 sm:px-8 max-w-5xl mx-auto space-y-16">
-        
-        <!-- Pillar 1 -->
-        <div class="grid md:grid-cols-12 gap-8 items-start">
-            <div class="md:col-span-4 sticky top-28">
-                <div class="text-sand-500 font-mono text-sm font-bold mb-2">01</div>
-                <h2 class="text-2xl font-bold text-navy-900 mb-3" data-i18n="p1_title">Corporate Setup & Registrations</h2>
-                <p class="text-sm text-slate-600 mb-6" data-i18n="p1_sub">Turn-key entity formation and foreign branch licensing.</p>
-            </div>
-            <div class="md:col-span-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
-                <p class="text-slate-700 text-sm sm:text-base mb-6" data-i18n="p1_desc">
-                    We manage the entire lifecycle of corporate structuring in Jordan. This includes advising on the optimal entity type (LLC vs. Foreign Operating Branch), drafting bilingual articles of association, and handling multi-jurisdictional powers of attorney (POA).
-                </p>
-                <!-- Jurisdiction Note Box -->
-                <div class="bg-sand-50 border-l-2 border-sand-500 p-4 rounded-r-lg mb-6">
-                    <h4 class="text-xs font-bold uppercase tracking-wide text-navy-900 mb-1" data-i18n="note_title">Jurisdiction Note</h4>
-                    <p class="text-xs sm:text-sm text-slate-700" data-i18n="p1_note">
-                        Registering a foreign branch requires corporate documents authenticated by the Ministry of Foreign Affairs in the origin country and the Jordanian Embassy. We manage the local legalization process directly.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <hr class="border-slate-200">
-
-        <!-- Pillar 2 -->
-        <div class="grid md:grid-cols-12 gap-8 items-start">
-            <div class="md:col-span-4 sticky top-28">
-                <div class="text-sand-500 font-mono text-sm font-bold mb-2">02</div>
-                <h2 class="text-2xl font-bold text-navy-900 mb-3" data-i18n="p2_title">Remote Employment & IP</h2>
-                <p class="text-sm text-slate-600 mb-6" data-i18n="p2_sub">Ironclad contracts for regional tech teams and remote workforce.</p>
-            </div>
-            <div class="md:col-span-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
-                <p class="text-slate-700 text-sm sm:text-base mb-6" data-i18n="p2_desc">
-                    Hiring local talent via foreign entities carries severe misclassification risks. We draft robust, dual-language employment agreements fully compliant with Jordanian Labor Law, ensuring comprehensive Intellectual Property (IP) assignments and confidentiality.
-                </p>
-                <div class="bg-sand-50 border-l-2 border-sand-500 p-4 rounded-r-lg mb-6">
-                    <h4 class="text-xs font-bold uppercase tracking-wide text-navy-900 mb-1" data-i18n="note_title">Jurisdiction Note</h4>
-                    <p class="text-xs sm:text-sm text-slate-700" data-i18n="p2_note">
-                        Under Jordanian Law, non-compete clauses are strictly scrutinized. They are only valid and enforceable if explicitly restricted by time, geographical location, and precise scope of business.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <hr class="border-slate-200">
-
-        <!-- Pillar 3 -->
-        <div class="grid md:grid-cols-12 gap-8 items-start">
-            <div class="md:col-span-4 sticky top-28">
-                <div class="text-sand-500 font-mono text-sm font-bold mb-2">03</div>
-                <h2 class="text-2xl font-bold text-navy-900 mb-3" data-i18n="p3_title">Regulatory & Data Privacy</h2>
-                <p class="text-sm text-slate-600 mb-6" data-i18n="p3_sub">Data auditing and PDPL compliance representation.</p>
-            </div>
-            <div class="md:col-span-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
-                <p class="text-slate-700 text-sm sm:text-base mb-6" data-i18n="p3_desc">
-                    We act as your local compliance arm for Jordan's Personal Data Protection Law (Law No. 24/2023). Our legal operations team audits cross-border data transfers, drafts privacy notices, and acts as the official regulatory liaison.
-                </p>
-                <div class="bg-sand-50 border-l-2 border-sand-500 p-4 rounded-r-lg mb-6">
-                    <h4 class="text-xs font-bold uppercase tracking-wide text-navy-900 mb-1" data-i18n="note_title">Jurisdiction Note</h4>
-                    <p class="text-xs sm:text-sm text-slate-700" data-i18n="p3_note">
-                        Foreign entities processing data of individuals residing in Jordan are legally obligated under PDPL to appoint an authorized local representative to handle regulatory inquiries and breach notifications.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <hr class="border-slate-200">
-
-        <!-- Pillar 4 -->
-        <div class="grid md:grid-cols-12 gap-8 items-start">
-            <div class="md:col-span-4 sticky top-28">
-                <div class="text-sand-500 font-mono text-sm font-bold mb-2">04</div>
-                <h2 class="text-2xl font-bold text-navy-900 mb-3" data-i18n="p4_title">Commercial Litigation</h2>
-                <p class="text-sm text-slate-600 mb-6" data-i18n="p4_sub">Direct court representation and retained counsel.</p>
-            </div>
-            <div class="md:col-span-8 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
-                <p class="text-slate-700 text-sm sm:text-base mb-6" data-i18n="p4_desc">
-                    Led by licensed bar advocates, we represent corporate clients in commercial disputes, breach of contract claims, and labor litigations. We favor aggressive out-of-court settlements but are fully equipped for definitive courtroom execution.
-                </p>
-                <div class="bg-sand-50 border-l-2 border-sand-500 p-4 rounded-r-lg mb-6">
-                    <h4 class="text-xs font-bold uppercase tracking-wide text-navy-900 mb-1" data-i18n="note_title">Jurisdiction Note</h4>
-                    <p class="text-xs sm:text-sm text-slate-700" data-i18n="p4_note">
-                        Corporate and high-value disputes are processed through the Specialized Commercial Courts in Amman, designed specifically to expedite rulings for investors and enterprises.
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <!-- Footer (Shared) -->
@@ -216,28 +119,26 @@
         const i18n = {
             en: {
                 logo_sub: "Legal Solutions", nav_home: "Home", nav_services: "Services", nav_about: "About", nav_team: "Team", nav_contact: "Contact Us", cta_header: "Speak with Counsel",
-                hero_badge: "Core Capabilities", hero_title: "Integrated Corporate Practice Pillars", hero_desc: "Delivering end-to-end legal operations for foreign entities in Jordan. From market entry to continuous regulatory compliance and dispute resolution.",
-                p1_title: "Corporate Setup & Registrations", p1_sub: "Turn-key entity formation and foreign branch licensing.", p1_desc: "We manage the entire lifecycle of corporate structuring in Jordan. This includes advising on the optimal entity type, drafting bilingual articles of association, and handling multi-jurisdictional powers of attorney (POA).",
-                note_title: "Jurisdiction Note", p1_note: "Registering a foreign branch requires corporate documents authenticated by the Ministry of Foreign Affairs in the origin country and the Jordanian Embassy. We manage the local legalization process directly.",
-                p2_title: "Remote Employment & IP", p2_sub: "Ironclad contracts for regional tech teams and remote workforce.", p2_desc: "Hiring local talent via foreign entities carries severe misclassification risks. We draft robust, dual-language employment agreements fully compliant with Jordanian Labor Law, ensuring comprehensive Intellectual Property (IP) assignments and confidentiality.",
-                p2_note: "Under Jordanian Law, non-compete clauses are strictly scrutinized. They are only valid and enforceable if explicitly restricted by time, geographical location, and precise scope of business.",
-                p3_title: "Regulatory & Data Privacy", p3_sub: "Data auditing and PDPL compliance representation.", p3_desc: "We act as your local compliance arm for Jordan's Personal Data Protection Law (Law No. 24/2023). Our legal operations team audits cross-border data transfers, drafts privacy notices, and acts as the official regulatory liaison.",
-                p3_note: "Foreign entities processing data of individuals residing in Jordan are legally obligated under PDPL to appoint an authorized local representative to handle regulatory inquiries and breach notifications.",
-                p4_title: "Commercial Litigation", p4_sub: "Direct court representation and retained counsel.", p4_desc: "Led by licensed bar advocates, we represent corporate clients in commercial disputes, breach of contract claims, and labor litigations. We favor aggressive out-of-court settlements but are fully equipped for definitive courtroom execution.",
-                p4_note: "Corporate and high-value disputes are processed through the Specialized Commercial Courts in Amman, designed specifically to expedite rulings for investors and enterprises.",
+                about_badge: "The Legal Operations Model",
+                about_title: "Bridging the Gap Between Local Courtrooms and International Standards.",
+                about_p1: "Entering a new market or managing cross-border teams inherently comes with a structural disconnect. Foreign investors and tech firms require speed, digital transparency, and institutional governance. In contrast, local execution in Jordan—across ministries, registries, and courts—relies heavily on deeply ingrained bureaucratic processes and Arabic-centric legal nuances.",
+                about_p2: "<strong>Masar Legal Solutions (MLS)</strong> was founded to permanently eliminate this friction. We are not a traditional law firm constrained by legacy operational models, nor are we remote consultants detached from the reality of the local system. We are an integrated execution desk.",
+                about_box_title: "Our Distinct Advantage",
+                about_box_desc: "By merging the rigorous compliance standards and bilingual operational models honed in International NGOs (INGOs) with the direct courtroom authority of Jordan Bar-admitted advocates, MLS ensures that your legal strategy is not only internationally viable, but flawlessly executed on the ground in Amman.",
+                about_h3: "We Don't Just Advise; We Execute.",
+                about_p3: "Our approach is systematic: clear fixed-fee structures, immediate turnaround times, and direct partner access. Whether we are auditing your data privacy frameworks under PDPL Law 24/2023 or standing before a judge in a commercial dispute, Masar acts as the impenetrable legal shield for your operations in Jordan.",
                 footer_loc: "Amman, Jordan", footer_rights: "© 2026 Masar Legal Solutions. All rights reserved."
             },
             ar: {
                 logo_sub: "حلول قانونية", nav_home: "الرئيسية", nav_services: "الاختصاصات", nav_about: "عن مسار", nav_team: "فريق العمل", nav_contact: "تواصل معنا", cta_header: "تحدث مع محامٍ",
-                hero_badge: "مجالات الاختصاص", hero_title: "ركائز الممارسة القانونية المؤسسية", hero_desc: "نقدم عمليات قانونية متكاملة للشركات الأجنبية في الأردن. بدءاً من دخول السوق وتأسيس الكيانات، وصولاً إلى الامتثال التنظيمي وحل النزاعات.",
-                p1_title: "تأسيس وتسجيل الشركات", p1_sub: "تشكيل الكيانات وترخيص الفروع الإقليمية.", p1_desc: "ندير دورة الهيكلة المؤسسية في الأردن بالكامل. يشمل ذلك تقديم المشورة حول نوع الكيان الأنسب، صياغة عقود التأسيس ثنائية اللغة، وإدارة الوكالات الرسمية العابرة للحدود.",
-                note_title: "ملاحظة اختصاص إجرائية", p1_note: "يتطلب تسجيل فرع أجنبي في الأردن وثائق مصدقة من وزارة خارجية البلد الأم والسفارة الأردنية. نحن نتولى إدارة إجراءات التصديق المحلي مباشرة نيابة عنكم.",
-                p2_title: "عقود التوظيف عن بُعد والملكية", p2_sub: "عقود محكمة لفرق العمل التقنية وعن بُعد.", p2_desc: "يحمل توظيف الكفاءات المحلية عبر كيانات أجنبية مخاطر قانونية عالية. نقوم بصياغة عقود عمل ثنائية اللغة ممتثلة تماماً لقانون العمل الأردني، مع ضمان التنازل الكامل عن الملكية الفكرية والسرية.",
-                p2_note: "بموجب القانون الأردني، تخضع شروط عدم المنافسة لتدقيق صارم. لا تُعد نافذة وقابلة للتطبيق إلا إذا كانت مقيدة بوضوح من حيث المدة الزمنية، النطاق الجغرافي، وطبيعة العمل الدقيقة.",
-                p3_title: "الامتثال وحماية البيانات", p3_sub: "التدقيق والتنظيم وفق قانون PDPL.", p3_desc: "نعمل كذراع للامتثال لقانون حماية البيانات الشخصية الأردني (رقم 24/2023). يدقق فريق العمليات القانونية عمليات نقل البيانات، يصيغ إشعارات الخصوصية، ويمثلكم أمام الجهات التنظيمية.",
-                p3_note: "يُلزم قانون حماية البيانات الكيانات الأجنبية التي تعالج بيانات مقيمين في الأردن بتعيين ممثل محلي معتمد للتعامل مع الاستفسارات التنظيمية وإشعارات الاختراق.",
-                p4_title: "التقاضي التجاري وحل النزاعات", p4_sub: "التمثيل القضائي المباشر والاشتراكات.", p4_desc: "بقيادة محامين مزاولين، نمثل الشركات في النزاعات التجارية، مطالبات الإخلال بالعقود، والقضايا العمالية. نفضل إبرام تسويات ودية حاسمة، ولكننا مجهزون بالكامل للتنفيذ القضائي الصارم.",
-                p4_note: "تُنظر النزاعات المؤسسية ذات القيمة العالية من خلال الغرف التجارية المتخصصة في محاكم عمان، والتي أُسست خصيصاً لتسريع التقاضي وحماية المستثمرين.",
+                about_badge: "نموذج العمليات القانونية",
+                about_title: "الجسر الرابط بين الواقع الميداني المحلي والمعايير المؤسسية الدولية.",
+                about_p1: "دخول أسواق جديدة أو إدارة فرق عمل عابرة للحدود يأتي غالباً مع فجوة هيكلية. المستثمر الأجنبي وشركات التقنية يتطلبون السرعة، الشفافية الرقمية، والحوكمة المؤسسية. في المقابل، التنفيذ المحلي في الأردن - عبر الوزارات والمحاكم - يعتمد على إجراءات بيروقراطية عميقة وتفاصيل قانونية دقيقة باللغة العربية.",
+                about_p2: "تأسست <strong>مسار للحلول القانونية (MLS)</strong> لإنهاء هذا التعقيد بشكل دائم. نحن لسنا مكتب محاماة تقليدي مقيد بأنظمة عمل قديمة، ولسنا مجرد مستشارين عن بُعد منفصلين عن واقع النظام المحلي؛ نحن ذراع تنفيذي متكامل.",
+                about_box_title: "ميزتنا التنافسية",
+                about_box_desc: "من خلال دمج معايير الامتثال الصارمة ونماذج العمليات ثنائية اللغة المكتسبة من المنظمات الدولية (INGOs)، مع السلطة الميدانية والقضائية المباشرة لمحامين مزاولين ومعتمدين لدى نقابة المحامين الأردنيين، تضمن (مسار) أن استراتيجيتك القانونية ليست فقط متوافقة دولياً، بل منفذة ببراعة وحسم على أرض الواقع في عمان.",
+                about_h3: "نحن لا نُنَظِّر؛ بل نُنفّذ.",
+                about_p3: "منهجيتنا صارمة وواضحة: هياكل أتعاب مقطوعة وشفافة، سرعة في الإنجاز، وتواصل مباشر مع الشركاء. سواء كنا ندقق سياسات حماية البيانات (PDPL رقم 24/2023) الخاصة بك، أو نترافع أمام القضاء في نزاع تجاري، تعمل (مسار) كدرع قانوني صلب لعملياتك في الأردن.",
                 footer_loc: "عَمّان، الأردن", footer_rights: "© 2026 مسار للحلول القانونية. جميع الحقوق محفوظة."
             }
         };
