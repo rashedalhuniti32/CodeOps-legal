@@ -1,28 +1,19 @@
 <!DOCTYPE html>
-<!-- تم ضبط اللغة الافتراضية والاتجاه، والتمرير السلس (Smooth Scroll) -->
 <html lang="en" dir="ltr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO & Meta Tags -->
-    <title>MASAR | Legal Solutions — Corporate Counsel Jordan</title>
-    <meta name="description" content="Corporate legal operations, business setup, remote workforce structuring, and commercial litigation in Amman, Jordan.">
-    <meta name="keywords" content="Law firm Jordan, Corporate setup Amman, PDPL compliance, Lawyers in Jordan, محامي شركات الأردن, تأسيس شركات عمان">
-    <meta name="author" content="Masar Legal Solutions">
-    
-    <!-- إعدادات hreflang لمحركات البحث لفهم اللغتين -->
-    <link rel="alternate" hreflang="en" href="https://yourdomain.com/" />
-    <link rel="alternate" hreflang="ar" href="https://yourdomain.com/?lang=ar" />
+    <title>CodeOps-Legal | Corporate Counsel Jordan</title>
+    <meta name="description" content="End-to-end corporate legal operations, business setup, amendments, liquidation, and commercial litigation in Amman, Jordan.">
+    <meta name="author" content="CodeOps Legal">
 
-    <!-- Schema Markup (JSON-LD) لتحسين ظهور الشركة في محركات البحث ككيان قانوني -->
+    <!-- Schema Markup (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LegalService",
-      "name": "Masar Legal Solutions",
+      "name": "CodeOps Legal",
       "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
-      "@id": "",
       "url": "https://yourdomain.com",
       "telephone": "+962XXXXXXXXX",
       "address": {
@@ -30,23 +21,22 @@
         "addressLocality": "Amman",
         "addressCountry": "JO"
       },
-      "description": "Corporate legal operations, business setup, and commercial litigation in Jordan."
+      "description": "End-to-end corporate legal operations in Jordan."
     }
     </script>
-    
-    <!-- Google Fonts: Plus Jakarta للإنجليزية و IBM Plex للعربية -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS (مكتبة التصميم) -->
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        // الألوان المؤسسية المعتمدة
                         navy: { 900: '#0A1424', 800: '#111D32', 700: '#1A2A45' },
                         sand: { 50: '#FAF8F5', 100: '#F2EBE1', 400: '#D1B48C', 500: '#C5A880', 600: '#B0936C' },
                         slate: { 50: '#F8FAFC', 100: '#F1F5F9', 600: '#475569', 800: '#1E293B', 900: '#0F172A' }
@@ -59,43 +49,35 @@
             }
         }
     </script>
-    
-    <!-- Custom CSS (تخصيصات متقدمة) -->
+
     <style>
-        /* إعدادات اللغة العربية */
         [dir="rtl"] { font-family: 'IBM Plex Sans Arabic', sans-serif; text-align: right; }
         [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { line-height: 1.5 !important; }
         [dir="rtl"] .text-start { text-align: right; }
         [dir="ltr"] .text-start { text-align: left; }
-        
-        /* نمط الشبكة الهندسية الاحترافية (Grid Pattern) للخلفيات */
         .bg-grid-pattern {
             background-image: linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
                               linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
             background-size: 36px 36px;
         }
-
-        /* تحسينات إمكانية الوصول (Focus States) */
         button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
-            outline: 2px solid #C5A880;
-            outline-offset: 2px;
+            outline: 2px solid #C5A880; outline-offset: 2px;
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-sand-500 selection:text-white flex flex-col min-h-screen">
 
-    <!-- Header & Navigation (Glassmorphic Design) -->
+    <!-- Header -->
     <header class="sticky top-0 z-50 bg-navy-900/90 backdrop-blur-md border-b border-navy-700/60 transition-all duration-300 shadow-sm">
         <div class="max-w-6xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
-            <a href="#home" class="flex items-center gap-3 group" aria-label="MASAR Home">
-                <div class="w-10 h-10 rounded-lg bg-sand-500 flex items-center justify-center font-bold text-navy-900 text-xl shadow-sm group-hover:bg-sand-400 transition transform group-hover:scale-105">M</div>
+            <a href="#home" class="flex items-center gap-3 group" aria-label="CodeOps Home">
+                <div class="w-10 h-10 rounded-lg bg-sand-500 flex items-center justify-center font-bold text-navy-900 text-xl shadow-sm group-hover:bg-sand-400 transition transform group-hover:scale-105">C</div>
                 <div>
-                    <span class="text-white font-bold tracking-tight text-base sm:text-lg block leading-tight">MASAR</span>
-                    <span class="text-[10px] text-sand-500 font-semibold tracking-wider block uppercase">Legal Solutions</span>
+                    <span class="text-white font-bold tracking-tight text-base sm:text-lg block leading-tight">CodeOps</span>
+                    <span class="text-[10px] text-sand-500 font-semibold tracking-wider block uppercase">Legal</span>
                 </div>
             </a>
 
-            <!-- Navigation Links -->
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
                 <a href="#services" class="hover:text-sand-500 transition border-b-2 border-transparent hover:border-sand-500 pb-1" data-i18n="nav_services">Services</a>
                 <a href="#about" class="hover:text-sand-500 transition border-b-2 border-transparent hover:border-sand-500 pb-1" data-i18n="nav_about">About</a>
@@ -103,7 +85,6 @@
                 <a href="#contact" class="hover:text-sand-500 transition border-b-2 border-transparent hover:border-sand-500 pb-1" data-i18n="nav_contact">Contact</a>
             </nav>
 
-            <!-- Language Switcher & CTA -->
             <div class="flex items-center gap-4">
                 <button id="langToggle" aria-label="Toggle Language" class="text-xs font-semibold px-3 py-1.5 rounded-lg border border-navy-700 text-slate-300 hover:text-white hover:border-sand-500 transition flex items-center gap-1.5">
                     <span id="langLabel">العربية</span>
@@ -115,12 +96,11 @@
         </div>
     </header>
 
-    <!-- Hero Section (صورة تعبر عن البيئة المعمارية والمؤسسية مع تظليل) -->
     <main class="flex-grow">
+        <!-- Hero Section -->
         <section id="home" class="relative bg-navy-900 text-white pt-20 sm:pt-28 pb-24 px-5 sm:px-8 overflow-hidden border-b border-navy-800">
-            <!-- Background Elements -->
             <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" alt="Amman Corporate Architecture" class="w-full h-full object-cover opacity-20 filter grayscale contrast-125 mix-blend-luminosity" loading="eager">
+                <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=2071&auto=format&fit=crop" alt="Corporate" class="w-full h-full object-cover opacity-20 filter grayscale contrast-125 mix-blend-luminosity" loading="eager">
                 <div class="absolute inset-0 bg-gradient-to-t from-navy-900 via-navy-900/85 to-transparent"></div>
                 <div class="absolute inset-0 bg-grid-pattern opacity-40"></div>
             </div>
@@ -128,173 +108,116 @@
             <div class="relative z-10 max-w-6xl mx-auto">
                 <div class="grid lg:grid-cols-12 gap-12 items-center">
                     <div class="lg:col-span-8 text-center text-start">
-                        <!-- Badge -->
                         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-bold tracking-wider uppercase bg-navy-800/80 text-sand-500 border border-navy-700/50 mb-6 shadow-sm backdrop-blur-sm">
                             <span class="w-1.5 h-1.5 rounded-full bg-sand-500 animate-pulse"></span>
-                            <span data-i18n="hero_badge">Amman Corporate Practice</span>
+                            <span data-i18n="hero_badge">End-to-End Legal Solutions in Jordan</span>
                         </div>
 
-                        <!-- Headlines -->
                         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] mb-6" data-i18n="hero_title">
-                            Establish, Protect, and Scale Your Business in Jordan.
+                            Establish, Protect, and Scale Your Business with Full Legal Responsibility.
                         </h1>
 
                         <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed max-w-2xl mb-10" data-i18n="hero_desc">
-                            We act as your local legal execution desk. Providing companies, investors, and foreign founders with seamless entity setup, reliable remote workforce contracts, and court-admitted commercial representation.
+                            We act as your complete legal ecosystem in Jordan. From company setup and complex financial amendments to strike-offs and court representation. Supported by a trusted network of elite lawyers and specialists across the Kingdom, we take full responsibility for your operations.
                         </p>
 
-                        <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row items-center gap-4">
                             <a href="#contact" class="w-full sm:w-auto text-center bg-sand-500 hover:bg-sand-400 text-navy-900 font-bold px-8 py-3.5 rounded-xl text-sm transition shadow-lg transform hover:-translate-y-0.5" data-i18n="hero_btn_main">
                                 Start a Conversation
                             </a>
-                            <a href="#services" class="w-full sm:w-auto text-center bg-navy-800/80 hover:bg-navy-700 text-slate-200 font-semibold px-6 py-3.5 rounded-xl text-sm border border-navy-600 backdrop-blur-sm transition" data-i18n="hero_btn_sec">
-                                View Practice Areas
-                            </a>
                         </div>
                     </div>
 
-                    <!-- Credibility / Trust Box -->
+                    <!-- Trust Box -->
                     <div class="lg:col-span-4 bg-navy-800/70 backdrop-blur-md p-7 rounded-2xl border border-navy-700/60 shadow-2xl space-y-5 hover:border-sand-500/30 transition">
                         <div class="font-bold text-sand-500 tracking-widest uppercase text-[11px] border-b border-navy-700/50 pb-3 flex items-center gap-2">
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-                            <span data-i18n="trust_title">Admitted & Regulated</span>
+                            <span data-i18n="trust_title">Why CodeOps-Legal?</span>
                         </div>
                         <div class="flex items-start gap-3 text-sm text-slate-300">
                             <span class="text-sand-500 mt-0.5 font-bold">✓</span>
-                            <p data-i18n="trust_1">Licensed advocates admitted to the Jordan Bar Association.</p>
+                            <p data-i18n="trust_1">Comprehensive network of specialized lawyers across all Jordanian jurisdictions.</p>
                         </div>
                         <div class="flex items-start gap-3 text-sm text-slate-300">
                             <span class="text-sand-500 mt-0.5 font-bold">✓</span>
-                            <p data-i18n="trust_2">Clear transparent fee structures without surprise billable hours.</p>
+                            <p data-i18n="trust_2">End-to-End service: Setup, amendments, authentications, and liquidations.</p>
                         </div>
                         <div class="flex items-start gap-3 text-sm text-slate-300">
                             <span class="text-sand-500 mt-0.5 font-bold">✓</span>
-                            <p data-i18n="trust_3">Bilingual legal drafts (Arabic & English) with direct partner access.</p>
+                            <p data-i18n="trust_3">Full assumption of legal and operational liability for your entity.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- Services Section (6 Cards instead of 4) -->
         <section id="services" class="py-24 px-5 sm:px-8 max-w-6xl mx-auto relative">
             <div class="max-w-2xl text-center text-start mb-16 relative z-10">
                 <span class="text-xs uppercase font-bold tracking-widest text-sand-600 block mb-3" data-i18n="services_sub">Practice Areas</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-navy-900" data-i18n="services_title">Focused Corporate & Commercial Counsel</h2>
+                <h2 class="text-3xl sm:text-4xl font-bold text-navy-900" data-i18n="services_title">A Complete Legal & Corporate Ecosystem</h2>
             </div>
 
-            <!-- Cards -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
                 <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-sand-500/60 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-12 h-12 rounded-xl bg-sand-100 text-navy-900 flex items-center justify-center font-bold text-lg mb-6">01</div>
-                    <h3 class="text-lg font-bold text-navy-900 mb-3" data-i18n="s1_title">Company Setup & Registration</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s1_desc">Incorporation of LLCs, regional branch licensing, shareholder filings, and consular authentications.</p>
+                    <h3 class="text-lg font-bold text-navy-900 mb-3" data-i18n="s1_title">Setup & Registration</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s1_desc">Incorporation of LLCs, regional branch licensing, and full documentation in Jordan.</p>
                 </div>
                 <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-sand-500/60 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-12 h-12 rounded-xl bg-sand-100 text-navy-900 flex items-center justify-center font-bold text-lg mb-6">02</div>
-                    <h3 class="text-lg font-bold text-navy-900 mb-3" data-i18n="s2_title">Employment & IP Agreements</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s2_desc">Jordanian labor-law compliant contracts, contractor structures, and complete intellectual property protection.</p>
+                    <h3 class="text-lg font-bold text-navy-900 mb-3" data-i18n="s5_title">Amendments & Authentications</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s5_desc">Executing structural, financial, and legal amendments with full ministry authentications.</p>
                 </div>
                 <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-sand-500/60 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-12 h-12 rounded-xl bg-sand-100 text-navy-900 flex items-center justify-center font-bold text-lg mb-6">03</div>
+                    <h3 class="text-lg font-bold text-navy-900 mb-3" data-i18n="s6_title">Liquidation & Strike-off</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s6_desc">Safe and legally compliant company closures, liquidations, and tax file settlements.</p>
+                </div>
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-sand-500/60 transition-all duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-lg font-bold text-navy-900 mb-3" data-i18n="s2_title">Employment & IP</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s2_desc">Labor-law compliant contracts, remote workforce structuring, and complete IP protection.</p>
+                </div>
+                <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-sand-500/60 transition-all duration-300 transform hover:-translate-y-1">
                     <h3 class="text-lg font-bold text-navy-900 mb-3" data-i18n="s3_title">Regulatory & Data Privacy</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s3_desc">Advising foreign companies on Jordan's Personal Data Protection Law (PDPL Law 24/2023) and cross-border filings.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s3_desc">Advising foreign companies on Jordan's PDPL Law 24/2023 and cross-border filings.</p>
                 </div>
                 <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:border-sand-500/60 transition-all duration-300 transform hover:-translate-y-1">
-                    <div class="w-12 h-12 rounded-xl bg-sand-100 text-navy-900 flex items-center justify-center font-bold text-lg mb-6">04</div>
                     <h3 class="text-lg font-bold text-navy-900 mb-3" data-i18n="s4_title">Litigation & Retainers</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s4_desc">Direct commercial court representation, dispute settlements, and ongoing monthly corporate retainers.</p>
+                    <p class="text-sm text-slate-600 leading-relaxed" data-i18n="s4_desc">Commercial court representation, dispute settlements, and ongoing monthly retainers.</p>
                 </div>
             </div>
         </section>
 
-        <!-- About Section (مدمج بها صورة استراتيجية ترمز للبيئة المعمارية والمكتبية) -->
+        <!-- About Section -->
         <section id="about" class="py-24 bg-sand-50 border-y border-slate-200 px-5 sm:px-8 relative overflow-hidden">
             <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Image Side -->
                 <div class="relative w-full h-80 lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                     <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop" alt="Corporate Office Reality" class="w-full h-full object-cover filter grayscale contrast-125" loading="lazy">
-                    <!-- تأثير لوني متناسق مع العلامة التجارية -->
                     <div class="absolute inset-0 bg-navy-900/20 mix-blend-multiply"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-navy-900/60 to-transparent"></div>
                     <div class="absolute bottom-6 left-6 right-6 text-white text-start">
                         <div class="font-bold text-xl drop-shadow-md">Amman, Jordan</div>
-                        <div class="text-sand-400 text-sm drop-shadow-md">The Hub for Regional Operations</div>
+                        <div class="text-sand-400 text-sm drop-shadow-md">Your Full-Stack Legal Arm</div>
                     </div>
                 </div>
 
-                <!-- Text Side -->
                 <div class="max-w-xl text-start">
-                    <span class="text-xs uppercase font-bold tracking-widest text-sand-600 bg-sand-100 px-3 py-1 rounded-full" data-i18n="about_sub">About Masar</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-6 mb-6 leading-tight" data-i18n="about_title">Bridging the Gap Between Local Reality and International Standards.</h2>
+                    <span class="text-xs uppercase font-bold tracking-widest text-sand-600 bg-sand-100 px-3 py-1 rounded-full" data-i18n="about_sub">About CodeOps-Legal</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-6 mb-6 leading-tight" data-i18n="about_title">Taking Full Legal Responsibility for Your Operations.</h2>
                     <div class="text-base text-slate-600 leading-relaxed space-y-5">
-                        <p data-i18n="about_p1">Entering a new market often creates legal friction. Traditional local representation frequently lacks the agility required by modern businesses, while overseas advice misses local regulatory realities.</p>
-                        <p data-i18n="about_p2">Masar Legal Solutions was established to bridge this divide: combining hands-on courtroom admission with institutional compliance backgrounds, providing foreign and domestic companies with clear, actionable counsel.</p>
+                        <p data-i18n="about_p1">We are more than just a law firm; we are a massive network of seasoned advocates, financial specialists, and operational experts covering all of Jordan. Whatever your business needs—we execute it flawlessly.</p>
+                        <p data-i18n="about_p2">From standard registrations to critical financial amendments and complete entity liquidations, CodeOps-Legal absorbs the bureaucratic burden so you can focus on scaling.</p>
                     </div>
-                    <div class="mt-8">
-                        <div class="flex items-center gap-4 bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-                            <div class="w-12 h-12 rounded-full bg-sand-100 flex items-center justify-center text-sand-600">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-navy-900 text-sm" data-i18n="about_box_title">Executive Approach</h4>
-                                <p class="text-xs text-slate-500 mt-1" data-i18n="about_box_desc">Fixed fees, swift turnaround, and zero bureaucratic delays.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Leadership Section -->
-        <section id="team" class="py-24 px-5 sm:px-8 max-w-6xl mx-auto">
-            <div class="text-center text-start max-w-2xl mx-auto mb-16">
-                <span class="text-xs uppercase font-bold tracking-widest text-sand-600" data-i18n="team_sub">Our People</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-navy-900 mt-2" data-i18n="team_title">Practice Leadership</h2>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <!-- Profile 1 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-lg transition text-start relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-sand-50 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
-                    <span class="inline-block px-3 py-1 bg-navy-50 text-navy-700 rounded-md text-xs font-bold uppercase tracking-wider mb-4" data-i18n="t1_role">Partner & Senior Counsel</span>
-                    <h3 class="text-2xl font-bold text-navy-900 mb-1" data-i18n="t1_name">Corporate & Litigation Advocate</h3>
-                    <div class="flex items-center gap-2 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-sand-500"></span>
-                        <p class="text-sm font-semibold text-slate-500" data-i18n="t1_status">Jordan Bar Association Member</p>
-                    </div>
-                    <p class="text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4" data-i18n="t1_desc">
-                        Leads commercial dispute resolution, official ministry filings, entity registrations, and direct representation before the courts in Jordan.
-                    </p>
-                </div>
-
-                <!-- Profile 2 -->
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-md hover:shadow-lg transition text-start relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-sand-50 rounded-bl-full -z-10 transition-transform group-hover:scale-110"></div>
-                    <span class="inline-block px-3 py-1 bg-navy-50 text-navy-700 rounded-md text-xs font-bold uppercase tracking-wider mb-4" data-i18n="t2_role">Managing Consultant</span>
-                    <h3 class="text-2xl font-bold text-navy-900 mb-1" data-i18n="t2_name">Legal Operations & Governance</h3>
-                    <div class="flex items-center gap-2 mb-6">
-                        <span class="w-2 h-2 rounded-full bg-sand-500"></span>
-                        <p class="text-sm font-semibold text-slate-500" data-i18n="t2_status">Former International Counsel Network</p>
-                    </div>
-                    <p class="text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4" data-i18n="t2_desc">
-                        Specializes in cross-border frameworks, vendor due diligence, PDPL data privacy advisory, and seamless international workflow coordination.
-                    </p>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="py-24 bg-navy-900 text-white px-5 sm:px-8 relative overflow-hidden">
-            <!-- Background Image with Overlay -->
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32b7?q=80&w=2070&auto=format&fit=crop" alt="Legal Meeting" class="w-full h-full object-cover filter grayscale mix-blend-luminosity opacity-20" loading="lazy">
                 <div class="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/95 to-navy-900/80"></div>
             </div>
 
             <div class="max-w-4xl mx-auto relative z-10 grid md:grid-cols-12 gap-12 items-center">
-                <!-- Text Info -->
                 <div class="md:col-span-5 text-start">
                     <span class="text-xs uppercase font-bold tracking-widest text-sand-400 mb-2 block" data-i18n="contact_sub">Corporate Legal Inquiry</span>
                     <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4" data-i18n="contact_title">Contact Our Office</h2>
@@ -306,40 +229,36 @@
                             <svg class="w-5 h-5 text-sand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             <span>Amman, Jordan (HQ)</span>
                         </div>
-                        <div class="flex items-center gap-3 text-slate-300">
-                            <svg class="w-5 h-5 text-sand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            <span>Secure Digital Intake</span>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Form Area -->
                 <div class="md:col-span-7">
-                    <!-- تعليق برمجي: يمكنك استبدال action برابط Tally.so Webhook أو Airtable أو Formspree -->
-                    <form action="#" method="POST" class="bg-navy-800/80 backdrop-blur-xl p-8 rounded-2xl border border-navy-700 shadow-2xl space-y-5">
+                    <!-- Form Link goes in 'action' -->
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-navy-800/80 backdrop-blur-xl p-8 rounded-2xl border border-navy-700 shadow-2xl space-y-5">
                         <div class="grid sm:grid-cols-2 gap-5">
                             <div class="text-start">
                                 <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="form_name">Full Name</label>
-                                <input type="text" name="name" required class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition" placeholder="John Doe">
+                                <input type="text" name="name" required class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition">
                             </div>
                             <div class="text-start">
                                 <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="form_email">Corporate Email</label>
-                                <input type="email" name="email" required class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition" placeholder="john@company.com">
+                                <input type="email" name="email" required class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition">
                             </div>
                         </div>
 
                         <div class="grid sm:grid-cols-2 gap-5">
                             <div class="text-start">
                                 <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="form_company">Organization</label>
-                                <input type="text" name="company" class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition" placeholder="Organization name">
+                                <input type="text" name="company" class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition">
                             </div>
                             <div class="text-start">
                                 <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="form_subject">Matter of Interest</label>
                                 <select name="subject" class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition appearance-none">
-                                    <option value="corporate_setup" data-i18n="opt_1">Company Setup & Structuring</option>
-                                    <option value="employment" data-i18n="opt_2">Employment & Remote Contracts</option>
-                                    <option value="privacy" data-i18n="opt_3">Regulatory & Data Privacy (PDPL)</option>
-                                    <option value="dispute" data-i18n="opt_4">Commercial Dispute / Litigation</option>
+                                    <option value="corporate_setup" data-i18n="opt_1">Company Setup</option>
+                                    <option value="amendments" data-i18n="opt_6">Legal/Financial Amendments</option>
+                                    <option value="liquidation" data-i18n="opt_7">Liquidation & Strike-off</option>
+                                    <option value="employment" data-i18n="opt_2">Employment & Contracts</option>
+                                    <option value="dispute" data-i18n="opt_4">Litigation & Dispute</option>
                                     <option value="other" data-i18n="opt_5">General Legal Inquiry</option>
                                 </select>
                             </div>
@@ -347,10 +266,10 @@
 
                         <div class="text-start">
                             <label class="block text-xs font-semibold text-slate-300 mb-1.5" data-i18n="form_msg">Brief Details</label>
-                            <textarea name="message" rows="4" class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition resize-none" placeholder="Brief outline of your legal matter..."></textarea>
+                            <textarea name="message" rows="4" class="w-full bg-navy-900 border border-navy-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-sand-500 transition resize-none"></textarea>
                         </div>
 
-                        <button type="submit" class="w-full bg-sand-500 hover:bg-sand-400 text-navy-900 font-bold py-4 rounded-xl text-sm transition duration-150 shadow-lg transform hover:-translate-y-0.5" data-i18n="form_submit">
+                        <button type="submit" class="w-full bg-sand-500 hover:bg-sand-400 text-navy-900 font-bold py-4 rounded-xl text-sm transition duration-150 shadow-lg" data-i18n="form_submit">
                             Send Inquiry
                         </button>
                     </form>
@@ -359,91 +278,78 @@
         </section>
     </main>
 
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/9627XXXXXXXX" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center" aria-label="Chat on WhatsApp">
+        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.018l-.018.001a9.23 9.23 0 01-4.707-1.282l-.337-.2-3.498.918.935-3.414-.22-.349A9.22 9.22 0 013.8 11.996c0-5.127 4.175-9.3 9.303-9.3A9.294 9.294 0 0122.4 11.996c0 5.127-4.175 9.3-9.303 9.3l-.1.002h-.966zM12.03 4.678c-4.041 0-7.33 3.287-7.33 7.329 0 1.29.346 2.553 1.004 3.666l.11.186-.554 2.023 2.072-.543.181.107a7.316 7.316 0 003.518.898h.001c4.04 0 7.328-3.287 7.328-7.329s-3.288-7.33-7.33-7.33zm3.937 9.878c-.216-.108-1.275-.629-1.472-.702-.197-.072-.341-.108-.485.108-.144.216-.554.702-.68.845-.126.144-.252.162-.468.054-.216-.108-.91-.336-1.733-1.074-.64-.575-1.072-1.285-1.198-1.428-.126-.144-.013-.223.095-.33.097-.097.216-.252.324-.378.108-.126.144-.216.216-.36.072-.144.036-.27-.018-.378-.054-.108-.485-1.17-.665-1.602-.176-.423-.355-.365-.485-.371-.126-.007-.27-.008-.414-.008-.144 0-.378.054-.576.27-.198.216-.756.738-.756 1.799 0 1.061.774 2.087.882 2.231.108.144 1.523 2.326 3.69 3.264.516.223.918.356 1.232.456.519.165.992.141 1.365.085.42-.063 1.275-.521 1.455-1.025.18-.504.18-.935.126-1.025-.054-.089-.198-.144-.414-.251z"/></svg>
+    </a>
+
     <!-- Footer -->
     <footer class="bg-slate-950 text-slate-400 py-12 px-5 sm:px-8 border-t border-slate-900 text-xs font-medium mt-auto">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="text-center md:text-start text-start">
-                <span class="text-slate-200 font-bold text-sm block mb-1">MASAR Legal Solutions</span>
-                <span data-i18n="footer_location">Amman, Jordan — Executive Corporate Practice</span>
-            </div>
-            <div class="flex flex-wrap justify-center gap-6 text-slate-500">
-                <a href="#services" class="hover:text-sand-500 transition" data-i18n="nav_services">Services</a>
-                <a href="#about" class="hover:text-sand-500 transition" data-i18n="nav_about">About</a>
-                <a href="#team" class="hover:text-sand-500 transition" data-i18n="nav_team">Team</a>
-                <a href="#contact" class="hover:text-sand-500 transition" data-i18n="nav_contact">Contact</a>
+                <span class="text-slate-200 font-bold text-sm block mb-1">CodeOps-Legal</span>
+                <span data-i18n="footer_location">Amman, Jordan — Complete Corporate Ecosystem</span>
             </div>
             <div class="text-slate-600 text-center md:text-end text-start" data-i18n="footer_rights">
-                © 2026 MASAR Legal Solutions. All rights reserved.
+                © 2026 CodeOps-Legal. All rights reserved.
             </div>
         </div>
     </footer>
 
-    <!-- Bilingual Engine (محرك اللغات والترجمة) -->
+    <!-- Bilingual Engine -->
     <script>
         const i18n = {
             en: {
-                nav_services: "Services", nav_about: "About", nav_team: "Team", nav_contact: "Contact",
-                cta_header: "Speak with Counsel",
-                hero_badge: "Amman Corporate Practice",
-                hero_title: "Establish, Protect, and Scale Your Business in Jordan.",
-                hero_desc: "We act as your local legal execution desk. Providing companies, investors, and foreign founders with seamless entity setup, reliable remote workforce contracts, and court-admitted commercial representation.",
-                hero_btn_main: "Start a Conversation", hero_btn_sec: "View Practice Areas",
-                trust_title: "Admitted & Regulated",
-                trust_1: "Licensed advocates admitted to the Jordan Bar Association.",
-                trust_2: "Clear transparent fee structures without surprise billable hours.",
-                trust_3: "Bilingual legal drafts (Arabic & English) with direct partner access.",
-                services_sub: "Practice Areas", services_title: "Focused Corporate & Commercial Counsel",
-                s1_title: "Company Setup & Registration", s1_desc: "Incorporation of LLCs, regional branch licensing, shareholder filings, and consular authentications.",
-                s2_title: "Employment & IP Agreements", s2_desc: "Jordanian labor-law compliant contracts, contractor structures, and complete intellectual property protection.",
-                s3_title: "Regulatory & Data Privacy", s3_desc: "Advising foreign companies on Jordan's Personal Data Protection Law (PDPL Law 24/2023) and cross-border filings.",
-                s4_title: "Litigation & Retainers", s4_desc: "Direct commercial court representation, dispute settlements, and ongoing monthly corporate retainers.",
-                about_sub: "About Masar", about_title: "Bridging the Gap Between Local Reality and International Standards.",
-                about_p1: "Entering a new market often creates legal friction. Traditional local representation frequently lacks the agility required by modern businesses, while overseas advice misses local regulatory realities.",
-                about_p2: "Masar Legal Solutions was established to bridge this divide: combining hands-on courtroom admission with institutional compliance backgrounds, providing foreign and domestic companies with clear, actionable counsel.",
-                about_box_title: "Executive Approach", about_box_desc: "Fixed fees, swift turnaround, and zero bureaucratic delays.",
-                team_sub: "Our People", team_title: "Practice Leadership",
-                t1_role: "Partner & Senior Counsel", t1_name: "Corporate & Litigation Advocate", t1_status: "Jordan Bar Association Member",
-                t1_desc: "Leads commercial dispute resolution, official ministry filings, entity registrations, and direct representation before the courts in Jordan.",
-                t2_role: "Managing Consultant", t2_name: "Legal Operations & Governance Lead", t2_status: "Former International Counsel Network",
-                t2_desc: "Specializes in cross-border frameworks, vendor due diligence, PDPL data privacy advisory, and seamless international workflow coordination.",
-                contact_sub: "Corporate Legal Inquiry", contact_title: "Contact Our Office",
-                contact_note: "Inquiries are handled directly by counsel under strict legal privilege. Submit your matter details for a prompt response.",
+                nav_services: "Services", nav_about: "About", nav_team: "Team", nav_contact: "Contact", cta_header: "Speak with Counsel",
+                hero_badge: "End-to-End Legal Solutions in Jordan",
+                hero_title: "Establish, Protect, and Scale Your Business with Full Legal Responsibility.",
+                hero_desc: "We act as your complete legal ecosystem in Jordan. From company setup and complex financial amendments to strike-offs and court representation. Supported by a trusted network of elite lawyers and specialists across the Kingdom, we take full responsibility for your operations.",
+                hero_btn_main: "Start a Conversation",
+                trust_title: "Why CodeOps-Legal?",
+                trust_1: "Comprehensive network of specialized lawyers across all Jordanian jurisdictions.",
+                trust_2: "End-to-End service: Setup, amendments, authentications, and liquidations.",
+                trust_3: "Full assumption of legal and operational liability for your entity.",
+                services_sub: "Practice Areas", services_title: "A Complete Legal & Corporate Ecosystem",
+                s1_title: "Setup & Registration", s1_desc: "Incorporation of LLCs, regional branch licensing, and full documentation in Jordan.",
+                s5_title: "Amendments & Authentications", s5_desc: "Executing structural, financial, and legal amendments with full ministry authentications.",
+                s6_title: "Liquidation & Strike-off", s6_desc: "Safe and legally compliant company closures, liquidations, and tax file settlements.",
+                s2_title: "Employment & IP", s2_desc: "Labor-law compliant contracts, remote workforce structuring, and complete IP protection.",
+                s3_title: "Regulatory & Data Privacy", s3_desc: "Advising foreign companies on Jordan's PDPL Law 24/2023 and cross-border filings.",
+                s4_title: "Litigation & Retainers", s4_desc: "Commercial court representation, dispute settlements, and ongoing monthly retainers.",
+                about_sub: "About CodeOps-Legal", about_title: "Taking Full Legal Responsibility for Your Operations.",
+                about_p1: "We are more than just a law firm; we are a massive network of seasoned advocates, financial specialists, and operational experts covering all of Jordan. Whatever your business needs—we execute it flawlessly.",
+                about_p2: "From standard registrations to critical financial amendments and complete entity liquidations, CodeOps-Legal absorbs the bureaucratic burden so you can focus on scaling.",
+                contact_sub: "Corporate Legal Inquiry", contact_title: "Contact Our Office", contact_note: "Inquiries are handled directly by counsel under strict legal privilege. Submit your matter details for a prompt response.",
                 form_name: "Full Name", form_email: "Corporate Email", form_company: "Organization", form_subject: "Matter of Interest",
-                opt_1: "Company Setup & Structuring", opt_2: "Employment & Remote Contracts", opt_3: "Regulatory & Data Privacy (PDPL)", opt_4: "Commercial Dispute / Litigation", opt_5: "General Legal Inquiry",
+                opt_1: "Company Setup", opt_6: "Legal/Financial Amendments", opt_7: "Liquidation & Strike-off", opt_2: "Employment & Contracts", opt_4: "Litigation & Dispute", opt_5: "General Legal Inquiry",
                 form_msg: "Brief Details", form_submit: "Send Inquiry",
-                footer_location: "Amman, Jordan — Executive Corporate Practice", footer_rights: "© 2026 MASAR Legal Solutions. All rights reserved."
+                footer_location: "Amman, Jordan — Complete Corporate Ecosystem", footer_rights: "© 2026 CodeOps-Legal. All rights reserved."
             },
             ar: {
-                nav_services: "الاختصاصات", nav_about: "عن مسار", nav_team: "القيادة", nav_contact: "تواصل معنا",
-                cta_header: "احكي مع حلا الان (:",
-                hero_badge: "أعمال وقضايا الشركات في الأردن",
-                hero_title: "شريكك التنفيذي لتأسيس وحماية وتوسيع أعمالك في الأردن.",
-                hero_desc: "نعمل كذراعك القانوني والتشغيلي الميداني. نوفر للشركات الإقليمية والمستثمرين تأسيس الكيانات، عقود التوظيف المحكمة للفرق عن بُعد، والتمثيل القضائي الحاسم أمام المحاكم.",
-                hero_btn_main: "ابدأ محادثة معنا", hero_btn_sec: "استعرض مجالات الاختصاص",
-                trust_title: "الاعتماد والمزاولة الرسمية",
-                trust_1: "محامون مزاولون معتمدون لدى نقابة المحامين الأردنيين.",
-                trust_2: "أتعاب واضحة ومحددة مسبقاً دون تكاليف خفية أو مفاجآت.",
-                trust_3: "صياغة ثنائية اللغة وتواصل مباشر وسريع مع الشركاء.",
-                services_sub: "مجالات الاختصاص", services_title: "خدمات قانونية متخصصة للأعمال والشركات",
-                s1_title: "تأسيس وتسجيل الشركات", s1_desc: "تسجيل الشركات ذات المسؤولية المحدودة، الفروع الإقليمية، تنظيم سجلات الشركاء، والتصديقات القنصلية الرسمية.",
-                s2_title: "عقود التوظيف وحماية الملكية", s2_desc: "صياغة عقود العمل المتوافقة مع قانون العمل الأردني، وحماية حقوق الملكية الفكرية وملفات الضمان والضريبة.",
-                s3_title: "الامتثال وحماية البيانات (PDPL)", s3_desc: "توفيق الأوضاع مع قانون حماية البيانات الشخصية الأردني رقم 24 لسنة 2023 وإدارة مخاطر نقل البيانات للشركات الدولية.",
-                s4_title: "التقاضي والتمثيل المستمر", s4_desc: "الترافع التجاري المباشر أمام المحاكم، مفاوضات التسوية الودية، وعقود الاستبقاء القانوني والاشتراكات الشهرية للشركات.",
-                about_sub: "عن مسار", about_title: "الجسر بين الواقع الميداني المحلي والمعايير الدولية.",
-                about_p1: "دخول سوق جديدة أو إدارة أعمال عن بُعد يتطلب وضوحاً قانونياً تاماً. المكاتب التقليدية غالباً ما تفتقر للسرعة والمرونة التي تتطلبها الشركات العصرية، بينما الاستشارات الخارجية تفتقد الواقعية الميدانية.",
-                about_p2: "تأسست 'مسار للحلول القانونية' لسد هذه الفجوة؛ حيث نجمع بين الممارسة الميدانية المعتمدة أمام المحاكم، وبين الخلفية التنظيمية في المنظمات الدولية لتقديم حلول تنفيذية مباشرة.",
-                about_box_title: "منهجية تنفيذية حاسمة", about_box_desc: "أتعاب واضحة، سرعة في الإنجاز، وبلا تأخيرات بيروقراطية.",
-                team_sub: "فريقنا", team_title: "القيادة المهنية",
-                t1_role: "محامٍ شريك ومستشار رئيسي", t1_name: "مستشار قضايا وتأسيس الشركات", t1_status: "أستاذ مزاول — نقابة المحامين الأردنيين",
-                t1_desc: "يقود الترافع في النزاعات التجارية، تسجيل الكيانات لدى وزارة الصناعة والتجارة، والإجراءات التنظيمية والقضائية.",
-                t2_role: "مستشار تنفيذي", t2_name: "مسؤول العمليات القانونية والحوكمة", t2_status: "خلفية عمل سابقة في الشبكات الدولية",
-                t2_desc: "متخصص في أطر العمل العابرة للحدود، تدقيق امتثال الموردين، واستشارات الامتثال لقوانين حماية البيانات.",
-                contact_sub: "طلب استشارة قانونية", contact_title: "تواصل مع مكتبنا",
-                contact_note: "تُعامل جميع الاستفسارات بسرية مهنية وحصانة قانونية تامة. أرسل تفاصيل موضوعك للرد المباشر من قبل المستشارين.",
+                nav_services: "الاختصاصات", nav_about: "عن المنصة", nav_team: "القيادة", nav_contact: "تواصل معنا", cta_header: "تحدث مع مستشارك",
+                hero_badge: "حلول قانونية شاملة (End-to-End) في الأردن",
+                hero_title: "بوابتك لتأسيس وحماية وتوسيع أعمالك بمسؤولية قانونية كاملة.",
+                hero_desc: "نحن نمثل منظومتك القانونية المتكاملة في الأردن. نغطي كافة احتياجاتك بدءاً من التأسيس والتعديلات المالية والقانونية المعقدة، وصولاً إلى التصديقات، تصفية وشطب الشركات، والتمثيل القضائي. مدعومين بشبكة ضخمة من المحامين والمختصين في كافة أنحاء المملكة، لنتحمل عنك المسؤولية الكاملة.",
+                hero_btn_main: "ابدأ محادثة معنا",
+                trust_title: "لماذا CodeOps-Legal؟",
+                trust_1: "شبكة واسعة ومتكاملة من المحامين والمختصين لتغطية كافة متطلباتك في الأردن.",
+                trust_2: "خدمات شاملة من التأسيس، التعديلات، التصديقات، وحتى التصفية والشطب.",
+                trust_3: "نتحمل المسؤولية القانونية والتشغيلية الكاملة لضمان سير أعمالك بأمان.",
+                services_sub: "مجالات الاختصاص", services_title: "منظومة قانونية ومؤسسية متكاملة",
+                s1_title: "تأسيس وتسجيل الشركات", s1_desc: "تسجيل الشركات والفروع الإقليمية وإصدار كافة الأوراق الرسمية.",
+                s5_title: "التعديلات القانونية والتصديقات", s5_desc: "إجراء التعديلات الهيكلية والمالية وتصديق الوثائق من كافة الوزارات.",
+                s6_title: "تصفية وشطب الشركات", s6_desc: "إجراءات التصفية الآمنة، الشطب، وإغلاق الملفات الضريبية والعمالية.",
+                s2_title: "عقود التوظيف والملكية", s2_desc: "صياغة عقود العمل، حماية حقوق الملكية الفكرية، وتوظيف الفرق عن بُعد.",
+                s3_title: "الامتثال وحماية البيانات", s3_desc: "توفيق الأوضاع مع قانون PDPL وإدارة مخاطر نقل البيانات للشركات الدولية.",
+                s4_title: "التقاضي والتمثيل المستمر", s4_desc: "الترافع التجاري أمام المحاكم، تسوية النزاعات، وعقود الاستبقاء الشهري.",
+                about_sub: "عن CodeOps-Legal", about_title: "نتحمل المسؤولية القانونية الكاملة عن عملياتك.",
+                about_p1: "نحن لسنا مجرد مكتب محاماة تقليدي؛ نحن شبكة واسعة من المحامين المزاولين، والمختصين الماليين، وخبراء العمليات الذين يغطون الأردن بالكامل. مهما كانت احتياجات شركتك، نقوم بتنفيذها بدقة متناهية.",
+                about_p2: "من التأسيس الأولي مروراً بالتعديلات القانونية والمالية المعقدة، وصولاً إلى التصديقات الرسمية وتصفية الكيانات، CodeOps-Legal ترفع عن كاهلك العبء البيروقراطي لتتفرغ أنت لتنمية أعمالك.",
+                contact_sub: "طلب استشارة قانونية", contact_title: "تواصل مع مكتبنا", contact_note: "تُعامل جميع الاستفسارات بسرية مهنية وحصانة قانونية تامة. أرسل تفاصيل موضوعك للرد المباشر.",
                 form_name: "الاسم الكامل", form_email: "البريد الإلكتروني للعمل", form_company: "اسم الشركة / المؤسسة", form_subject: "طبيعة الموضوع",
-                opt_1: "تأسيس شركة أو تسجيل فرع", opt_2: "عقود التوظيف والفرق عن بُعد", opt_3: "الامتثال لقانون حماية البيانات", opt_4: "نزاع تجاري أو تمثيل قضائي", opt_5: "استفسار قانوني عام",
+                opt_1: "تأسيس وتسجيل شركة", opt_6: "تعديلات قانونية/مالية وتصديقات", opt_7: "تصفية وشطب شركة", opt_2: "عقود التوظيف والفرق عن بُعد", opt_4: "نزاع تجاري أو تمثيل قضائي", opt_5: "استفسار قانوني عام",
                 form_msg: "تفاصيل موجزة", form_submit: "إرسال الاستفسار",
-                footer_location: "عَمّان، الأردن — ممارسة مؤسسية متخصصة", footer_rights: "© 2026 MASAR للحلول القانونية. جميع الحقوق محفوظة."
+                footer_location: "عَمّان، الأردن — منظومة قانونية متكاملة", footer_rights: "© 2026 CodeOps-Legal. جميع الحقوق محفوظة."
             }
         };
 
@@ -454,8 +360,6 @@
             localStorage.setItem('masar_lang', lang);
             document.documentElement.lang = lang;
             document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
-            
-            // تغيير النص المعروض على الزر للغة المعاكسة
             langLabel.textContent = (lang === 'ar') ? 'English' : 'العربية';
 
             document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -471,7 +375,6 @@
             setLanguage(current === 'en' ? 'ar' : 'en');
         });
 
-        // Initialize language from storage on load
         document.addEventListener('DOMContentLoaded', () => {
             const savedLang = localStorage.getItem('masar_lang') || 'en';
             setLanguage(savedLang);
